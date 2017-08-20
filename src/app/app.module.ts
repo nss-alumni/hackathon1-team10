@@ -7,8 +7,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
     MdButtonModule,
     MdCheckboxModule,
+<<<<<<< Updated upstream
     MdIconRegistry,
     MdInputModule,
+=======
+>>>>>>> Stashed changes
     MdToolbarModule
 } from '@angular/material';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -26,11 +29,15 @@ import { ProfileComponent } from './profile/profile.component';
     BrowserAnimationsModule,
     MdButtonModule,
     MdCheckboxModule,
+<<<<<<< Updated upstream
     MdInputModule,
     MdToolbarModule
   ],
   providers: [
       MdIconRegistry
+=======
+    MdToolbarModule
+>>>>>>> Stashed changes
   ],
   bootstrap: [AppComponent]
 })
