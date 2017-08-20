@@ -1,3 +1,6 @@
+import { Observable } from 'rxjs/Rx';
+import { assertNotNull } from '@angular/compiler/src/output/output_ast';
+import { AuthService } from '../auth.service';
 import { Component, Input, OnInit } from '@angular/core';
 import { AppComponent } from '../app.component'
 
@@ -7,9 +10,10 @@ import { AppComponent } from '../app.component'
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-    @Input() isAuthenticated: boolean;
+    @Input() isAuthenticated: Observable<boolean>;
+    
 
-    construtor() {}
+  constructor(public authService: AuthService) { }
 
     ngOnInit() {
     }
