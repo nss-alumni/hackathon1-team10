@@ -5,4 +5,12 @@ export class AuthService {
   isAuthenticated = true;
   constructor() { }
 
+  loginUser(userObj) {
+    
+  }
+
+  logoutUser() {
+    
+  }
+
 }
