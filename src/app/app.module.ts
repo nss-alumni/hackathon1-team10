@@ -20,7 +20,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ProfileComponent } from './profile/profile.component';
 import {DirectoryComponent} from './directory/directory.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
