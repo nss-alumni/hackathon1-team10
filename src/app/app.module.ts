@@ -4,17 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {AuthService} from "./auth.service";
+import {AuthService} from './auth.service';
 
-import { AngularFireModule } from "angularfire2";
-import { AngularFireDatabaseModule } from "angularfire2/database";
-import { AngularFireAuthModule } from "angularfire2/auth";
-import { environment } from "../environments/environment";
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { environment } from '../environments/environment';
 import {
     MdButtonModule,
     MdCheckboxModule,
     MdInputModule,
-    MdToolbarModule
+    MdToolbarModule,
+    MdCardModule,
+    MdGridListModule
 } from '@angular/material';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -37,7 +39,9 @@ import {DirectoryComponent} from './directory/directory.component';
     MdButtonModule,
     MdCheckboxModule,
     MdInputModule,
-    MdToolbarModule
+    MdToolbarModule,
+    MdCardModule,
+    MdGridListModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

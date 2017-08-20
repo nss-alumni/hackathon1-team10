@@ -1,0 +1,13 @@
+<md-card *ngFor="let profile of profiles" class="example-card">
+    <md-card-header class="text">
+        <md-card-title>{{ profile.name }}</md-card-title>
+        <md-card-subtitle>{{profile.cohort}}</md-card-subtitle>
+    </md-card-header>
+    <img class="card-image" md-card-image src="../assets/{{profile.image}}">
+    <md-card-content>
+        <p class="text">{{profile.skills}}</p>
+    </md-card-content>
+    <md-card-actions>
+        <button md-button>Contact</button>
+    </md-card-actions>
+</md-card>
