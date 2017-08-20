@@ -1,0 +1,16 @@
+<md-toolbar>
+    <span><a routerLink="/">NexuSS</a></span>
+    <span *ngIf="isAuthenticated | async">
+        <a routerLink="/profile">
+            <i class="material-icons">perm_identity</i>
+        </a>
+        <button type="button" (click)="authService.logout()">
+            <md-icon>Sign Out</md-icon>
+        </button>
+    </span>
+    <span *ngIf="!(isAuthenticated | async)">
+        <button type="button" (click)="authService.login()">
+            <md-icon>Sign In</md-icon>
+        </button>
+    </span>
+</md-toolbar>
