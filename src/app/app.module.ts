@@ -18,6 +18,7 @@ import {
 } from '@angular/material';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ProfileService } from './profile.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { ProfileComponent } from './profile/profile.component';
     MdInputModule,
     MdToolbarModule
   ],
-  providers: [AuthService],
+  providers: [AuthService, ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
