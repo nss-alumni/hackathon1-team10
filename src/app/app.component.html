@@ -1,3 +1,5 @@
-<app-navbar></app-navbar>
+<app-navbar isAuthenticated="isAuthenticated"></app-navbar>
+
+<button (click)="isAuthenticated = !isAuthenticated">Toggle Authentication</button>
 
 <router-outlet></router-outlet>
